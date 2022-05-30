@@ -1,11 +1,16 @@
+@use "../../partials/responsive" as responsive;
+
 .hero {
     width: 100%;
-    height: 1200px;
+    // height: 1200px;
     background: no-repeat url("../../assets/img/bgHero.jpg") ;
     height: 1513px;
     top: -2px;
-    // box-shadow: 4px 4px 4px 16px rgb(57, 57, 57);
 
+    @include responsive.sm {
+       background-repeat: repeat-x;
+    }
+    
     & .heroContents {
         color: #FFFFFF;
         z-index: 2;

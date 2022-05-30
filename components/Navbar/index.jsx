@@ -19,7 +19,7 @@ const Navbar = () => {
 
       <CgDetailsMore 
           onClick={showNavbar} 
-          className={`${styles.navToggle} text-5xl relative top-6 text-white z-20 left-10 cursor-pointer`} 
+          className={`${styles.navToggle} text-5xl relative top-6 text-white z-20 left-10 cursor-pointer md:hidden`} 
         />
 
       <nav className={`${styles.nav} ${ showNav ? styles.showNav : styles.hideNav } `}>

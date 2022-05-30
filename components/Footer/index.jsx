@@ -7,7 +7,7 @@ const Footer = () => {
         <div className={`${styles.footerLeft}`}>
             <div className={`${styles.info}`}>
                 <h2> MNTN </h2>
-                <p>Get out there & discover your next slope, mountain & destination!</p>
+                <p className="mt-6">Get out there & discover your next slope, mountain & destination!</p>
             </div>
             <p className="font-medium text-lg leading-6 text-gray-400">Copyright 2019 MNTN, Inc. Terms & Privacy</p>
         </div>
