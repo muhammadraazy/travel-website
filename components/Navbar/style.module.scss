@@ -1,18 +1,45 @@
 @use '../../partials/responsive' as responsive;
 
-.nav {
-    width: 100%;
-    color: #FFFFFF;
+.navToggle {
 
     @include responsive.sm {
-        // visibility: hidden;
-        height: 350px;
-        justify-content: space-around;
-        align-items: center;
-        width: 600px;
-        left: -100px;
+        visibility: visible !important;
+    }
+
+    @include responsive.md {
+        visibility: hidden;
+    }
+}
+
+.nav {
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 25px;
+    margin: 0 auto;
+    top: 64px;
+    justify-content: space-between;
+    z-index: 10;
+    color: #FFFFFF;
+    transition: all 300ms ease-in-out;
+
+    @include responsive.sm {
+        visibility: hidden;
+        margin: -2rem 0;
+        height: 300px;
+        width: 350px;
+        padding: 20px;
         flex-direction: column;
+        align-items: center;
+
         background-color: #354147;
+
+    }
+
+    & .navLinks {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
 
     }
 
@@ -22,6 +49,12 @@
         letter-spacing: 0.01em;
         text-transform: capitalize;
     }
+
+    & .navRight {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 
@@ -29,11 +62,11 @@
      .showNav {
          visibility: visible;
          z-index: 10px;
-         background-color: red;
+         transform: translateX(0);
         }
         
         .hideNav {
-            display: none;
-            background-color: green;
+            visibility: hidden;
+            transform: translateX(-500px);
      }
  }
