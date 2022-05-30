@@ -1,0 +1,7 @@
+export { default as heroBg } from "./img/heroBg.png"
+export { default as bgHero } from "./img/bgHero.jpg"
+export { default as MG } from "./img/MG.png"
+export { default as VG } from "./img/VG.png"
+export { default as content1 } from "./img/content1.png"
+export { default as content2 } from "./img/content2.png"
+export { default as content3 } from "./img/content3.png"

@@ -1,13 +1,23 @@
 import Head from "next/head"
+import Navbar from "../Navbar"
+import Footer from "../Footer"
 
 const Layout = ({children}) => {
   return (
     <div>
         <Head>
             <meta name="music dashboard" content="building a music app dashboard" />
-            <title> Music Dashboard </title>
+            <title> Travel Ling </title>
         </Head>
-        { children }
+        <header>
+            <Navbar />
+        </header>
+        <main>
+          { children }
+        </main>
+        <footer>
+           <Footer />
+        </footer>
     </div>
   )
 }

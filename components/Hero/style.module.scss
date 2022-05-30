@@ -1,0 +1,85 @@
+.hero {
+    width: 100%;
+    height: 1200px;
+    background: no-repeat url("../../assets/img/bgHero.jpg") ;
+    height: 1513px;
+    top: -2px;
+    // box-shadow: 4px 4px 4px 16px rgb(57, 57, 57);
+
+    & .heroContents {
+        color: #FFFFFF;
+        z-index: 2;
+
+        & .heroCenter {
+            top: -80px;
+            left: 350px;
+            
+            & .small_title {
+                color: #FBD784;
+                
+                & hr {
+                    color: #FBD784 !important;
+                    width: 72px;
+                }
+
+                & h4 {
+                    // display: block;
+                    width: 212px;
+                    font-weight: 800;
+                }
+            }
+
+            & .large_title {
+                width: 700px;
+                
+                & h2 {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 88px;
+                    line-height: 100px;
+                }
+            }
+            
+        }
+
+        & .heroRight {
+            position: absolute;
+            display: flex;
+            right: 150px;
+            // width: 80px;
+            top: -3rem;
+            height: 200px;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 4;
+
+
+            & hr {
+                width: 2px;
+                height: 220px;
+                border: 2px solid;
+                position: relative;
+                margin-left: 10px;
+            }
+
+            & hr::after {
+                content: '';
+                top: 0;
+                width: 2px;
+                height: 90px;
+                border: 2px solid black;
+                position: absolute;
+            }
+        }
+    }
+}
+
+.hero::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
+}
