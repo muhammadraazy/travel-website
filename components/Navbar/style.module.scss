@@ -1,6 +1,20 @@
+@use '../../partials/responsive' as responsive;
+
 .nav {
     width: 100%;
     color: #FFFFFF;
+
+    @include responsive.sm {
+        // visibility: hidden;
+        height: 350px;
+        justify-content: space-around;
+        align-items: center;
+        width: 600px;
+        left: -100px;
+        flex-direction: column;
+        background-color: #354147;
+
+    }
 
     & .navTitle {
         font-size: 32px;
@@ -9,3 +23,17 @@
         text-transform: capitalize;
     }
 }
+
+
+ @include responsive.sm {
+     .showNav {
+         visibility: visible;
+         z-index: 10px;
+         background-color: red;
+        }
+        
+        .hideNav {
+            display: none;
+            background-color: green;
+     }
+ }

@@ -1,5 +1,5 @@
 {
-  "name": "crypto-dashboard",
+  "name": "Travel-Website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "antd": "^4.20.7",
     "chart.js": "^3.7.1",
     "next": "12.1.0",
     "react": "17.0.2",

@@ -32,7 +32,7 @@ const SectionOne = ({section: { id, src, smallTitle, largeTitle, desc, Icon, mor
                     </div>
                 </div>
                 <div className={`${styles.sectionRight}`}>
-                    <Image src={src} alt="image" height={720} width={566} />
+                    <Image src={src} blurDataURL='/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontent1.213e523c.png&w=8&q=70' alt="image" height={720} width={566} />
                 </div>
             </div>
         </div>
